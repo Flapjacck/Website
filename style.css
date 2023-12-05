@@ -1,0 +1,25 @@
+body{
+    background: linear-gradient(to right, #00eeff,purple);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    margin: 0px;
+}
+h1{
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    position: relative;
+    top: 175px;
+    text-align: center;
+}
+h1:hover{
+    text-shadow: 1px 1px 1px white;
+}
+p{
+    
+    text-align: center;
+    position: relative;
+    top: 155px;
+
+}
