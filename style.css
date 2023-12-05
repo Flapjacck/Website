@@ -1,25 +1,82 @@
-body{
-    background: linear-gradient(to right, #00eeff,purple);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+html, body {
+    width: 99%;
+    height:99%;
+  }
+  
+body {
+      background: linear-gradient(-45deg, #FF00B3, #AA51CC, #1e4c76, #00F2FF);
+      background-size: 400% 400%;
+      animation: gradient 20s ease infinite;
+  }
+  
+@keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
 
-    margin: 0px;
+      
+  }
+
+.box{
+
+    background: rgba(255, 255, 255, 0.086);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index: 900;
+    position: relative;
+    
+
 }
 h1{
     color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    position: relative;
-    top: 175px;
-    text-align: center;
+    z-index: 950;
 }
 h1:hover{
     text-shadow: 1px 1px 1px white;
 }
 p{
-    
-    text-align: center;
+    z-index: 950;
+
+}
+.center{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+
+}
+.footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.312);
+    box-shadow: 0 8px 32px 0 rgba(247, 248, 255, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+.social-box{
     position: relative;
-    top: 155px;
+    float: left;
+    padding: 1%;
+}
+.pop{
+    position: absolute;
+}
+.pop:hover{
+    animation: pop .5s linear 1;
+    fill: antiquewhite;
+}
+@keyframes pop{
+    50% {transform: scale(1.2);}
 
 }
