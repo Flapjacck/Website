@@ -4,7 +4,7 @@ html, body {
   }
   
 body {
-      background: linear-gradient(-45deg, #FF00B3, #AA51CC, #1e4c76, #00F2FF);
+      background: linear-gradient(-45deg, #efd5c5, #efd5c5, #ad9c93, #ad9c93);
       background-size: 400% 400%;
       animation: gradient 20s ease infinite;
   }
@@ -23,60 +23,10 @@ body {
       
   }
 
-.box{
 
-    background: rgba(255, 255, 255, 0.086);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    z-index: 900;
-    position: relative;
-    
 
-}
 h1{
     color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     z-index: 950;
-}
-h1:hover{
-    text-shadow: 1px 1px 1px white;
-}
-p{
-    z-index: 950;
-
-}
-.center{
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-
-}
-.footer{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.312);
-    box-shadow: 0 8px 32px 0 rgba(247, 248, 255, 0.37);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-}
-.social-box{
-    position: relative;
-    float: left;
-    padding: 1%;
-}
-.pop{
-    position: absolute;
-}
-.pop:hover{
-    animation: pop .5s linear 1;
-    fill: antiquewhite;
-}
-@keyframes pop{
-    50% {transform: scale(1.2);}
-
 }
