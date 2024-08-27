@@ -4,9 +4,9 @@ html, body {
   }
   
 body {
-      background: linear-gradient(-45deg, #efd5c5, #efd5c5, #ad9c93, #ad9c93);
-      background-size: 400% 400%;
-      animation: gradient 20s ease infinite;
+    background: linear-gradient(-45deg, #efd5c5, #efd5c5, #c7b5ab, #c7b5ab);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
   }
   
 @keyframes gradient {
@@ -23,10 +23,41 @@ body {
       
   }
 
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.titillium-web-black {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 h1{
-    color: black;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    z-index: 950;
+    font-size: 175px;
+    color: #B80036;
+    margin: -80px 0 0 0;
+    padding: 0;
+}
+
+h2{
+    font-size: 28.5px;
+    color: #B80036;
+    margin: -75px 0 0 -55px;
+    padding: 0;
+}
+.bottom-right-svg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px; /* Adjust as needed */
 }
