@@ -4,9 +4,9 @@ html, body {
   }
   
 body {
-    background: linear-gradient(-45deg, #efd5c5, #efd5c5, #c7b5ab, #c7b5ab);
+    background: linear-gradient(-45deg, #efd5c5, #efd5c5, #c0afa5, #c0afa5);
     background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+    animation: gradient 7s ease infinite;
   }
   
 @keyframes gradient {
@@ -33,7 +33,7 @@ body {
     font-family: "Titillium Web", sans-serif;
     font-weight: 900;
     font-style: normal;
-  }
+}
   
 
 .container {
@@ -45,7 +45,7 @@ body {
 h1{
     font-size: 175px;
     color: #B80036;
-    margin: -80px 0 0 0;
+    margin: -60px 0 0 0;
     padding: 0;
 }
 
@@ -59,5 +59,35 @@ h2{
     position: absolute;
     bottom: 0;
     right: 0;
-    margin: 20px; /* Adjust as needed */
+    margin: 20px;
+}
+
+.text-box {
+    width: 50%; /* Adjust width as needed */
+    padding: 10px;
+    margin-top: 50px; /* Space between h2 and text box */
+    font-size: 25px;
+    border: 2px solid #B80036;
+    border-radius: 5px;
+    background-color: #d6bfb0; /* Background color of the text box */
+    color: #B80036; /* Text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text inside the text box */
+    font-family: "DM Serif Text", serif; /* Font for the text box */
+}
+
+.svg-row {
+    display: flex;
+    justify-content: center;
+    gap: 150px; /* Space between SVGs */
+    margin-top: 50px; /* Space between text box and SVG row */
+}
+
+.svg-row svg {
+    fill: #B80036; /* Change this to the desired color */
+    transition: fill 0.3s ease; /* Optional: Add transition for smooth color change */
+}
+
+.svg-row svg:hover {
+    fill: #ad9c93; /* Change this to the desired hover color */
 }
