@@ -62,32 +62,50 @@ h2{
     margin: 20px;
 }
 
+.bottom-left-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0px;
+    width: 500px; 
+    height: auto; 
+}
+
+.top-right-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0px;
+    width: 280px; 
+    height: auto; 
+}
+
 .text-box {
-    width: 50%; /* Adjust width as needed */
+    width: 50%; 
     padding: 10px;
-    margin-top: 50px; /* Space between h2 and text box */
+    margin-top: 50px; 
     font-size: 25px;
     border: 2px solid #B80036;
     border-radius: 5px;
-    background-color: #d6bfb0; /* Background color of the text box */
-    color: #B80036; /* Text color */
+    background-color: #d6bfb0; 
+    color: #B80036; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Center the text inside the text box */
-    font-family: "DM Serif Text", serif; /* Font for the text box */
+    text-align: center; 
+    font-family: "DM Serif Text", serif; 
 }
 
 .svg-row {
     display: flex;
     justify-content: center;
-    gap: 150px; /* Space between SVGs */
-    margin-top: 50px; /* Space between text box and SVG row */
+    gap: 150px; 
+    margin-top: 50px; 
 }
 
 .svg-row svg {
-    fill: #B80036; /* Change this to the desired color */
-    transition: fill 0.3s ease; /* Optional: Add transition for smooth color change */
+    fill: #B80036; 
+    transition: fill 0.3s ease; 
 }
 
 .svg-row svg:hover {
-    fill: #ad9c93; /* Change this to the desired hover color */
+    fill: #ad9c93; 
 }
