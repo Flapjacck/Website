@@ -43,55 +43,67 @@ body {
 }
 
 h1{
-    font-size: 175px;
+    font-size: min(20vw, 175px);
     color: #B80036;
-    margin: -60px 0 0 0;
+    margin: -50px 0 0 0;
     padding: 0;
+    
 }
 
-h2{
-    font-size: 28.5px;
+h2 {
+    font-size: min(3.25vw, 28.5px);
     color: #B80036;
     margin: -75px 0 0 -55px;
     padding: 0;
 }
+/* dynamic size for underline text */
+@media (max-width: 800px) {
+    h2 {
+        margin: -45px 0 0 -50px; 
+    }
+}
+
+@media (max-width: 500px) {
+    h2 {
+        margin: -40px 0 0 -33px; 
+    }
+}
 
 .bottom-right-svg {
-    position: absolute;
+    pointer-events: none;
+    position: fixed;
     bottom: 0;
     right: 0;
     margin: 20px;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-.bottom-right-svg:hover {
-    transform: scale(1.3); 
-    opacity: 0.3; 
-}
 
 .bottom-left-image {
-    position: absolute;
+    pointer-events: none;
+    position: fixed;
     bottom: 0;
     left: 0;
     margin: 0px;
-    width: 500px; 
-    height: auto; 
+    width: 25vw; 
+    height: auto;
 }
 
 .top-right-image {
-    position: absolute;
+    pointer-events: none;
+    position: fixed;
     top: 0;
     right: 0;
     margin: 0px;
-    width: 280px; 
-    height: auto; 
+    width: 14vw; 
+    height: auto;
 }
 
 .text-box {
     width: 50%; 
     padding: 10px;
     margin-top: 50px; 
-    font-size: 25px;
+    font-size: min(10vw, 25px); 
     border: 2px solid #B80036;
     border-radius: 5px;
     background-color: #d6bfb0; 
@@ -106,6 +118,7 @@ h2{
     justify-content: center;
     gap: 150px; 
     margin-top: 50px; 
+
 }
 
 .svg-row svg {
