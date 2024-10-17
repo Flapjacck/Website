@@ -1,0 +1,93 @@
+/* projstyle.css */
+
+/* General Styles */
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #B80036;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #efd5c5;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero h1 {
+    font-family: 'DM Serif Text', serif;
+    font-size: 4em;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.9em;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.project-card {
+    background-color: #efd5c5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    font-size: 2.0em;
+    margin-top: 0;
+}
+
+.project-card p {
+    font-size: 1.5em;
+    color: #666;
+}
+
+/* Image Size Class */
+.img-fixed-size {
+    width: 350px; /* Set your desired width */
+    height: 300px; /* Set your desired height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}

@@ -145,6 +145,19 @@ h2 {
     animation: fadeIn 2s ease-in-out;
 }
 
+.centered-link {
+    text-decoration: underline;
+    display: block;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    text-align: center;
+    color: #B80036;
+    font-size: 50px;
+}
+
+.centered-link:hover {
+    color: #ad9c93; /* Change the color on hover */
+}
 
 /* Interests css sheet*/
 
