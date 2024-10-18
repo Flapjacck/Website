@@ -52,28 +52,6 @@
     <img src="images/os1.png" alt="Description of the image" class="bottom-left-image">
     <img src="images/os2.png" alt="Description of the image" class="top-right-image">
 
-    <script>
-        document.addEventListener('scroll', function() {
-            const svgRow = document.querySelector('.svg-row');
-            const bottomRightSvg = document.querySelector('.bottom-right-svg');
-            
-            const svgRowRect = svgRow.getBoundingClientRect();
-            const bottomRightSvgRect = bottomRightSvg.getBoundingClientRect();
-            
-            if (window.scrollY + window.innerHeight >= svgRowRect.top + window.scrollY) {
-                bottomRightSvg.style.position = 'absolute';
-                bottomRightSvg.style.top = `${svgRowRect.top - bottomRightSvgRect.height}px`;
-                bottomRightSvg.style.bottom = 'auto';
-                bottomRightSvg.style.right = '0px';
-            } else {
-                bottomRightSvg.style.position = 'fixed';
-                bottomRightSvg.style.bottom = '0';
-                bottomRightSvg.style.right = '0';
-                bottomRightSvg.style.margin = '20px';
-                bottomRightSvg.style.top = 'auto';
-            }
-        });
-    </script>
 
 </body>
 </html>

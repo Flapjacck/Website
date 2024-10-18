@@ -87,7 +87,7 @@ nav ul li a:hover {
 
 /* Image Size Class */
 .img-fixed-size {
-    width: 350px; /* Set your desired width */
-    height: 300px; /* Set your desired height */
+    width: 20vw; 
+    height: auto;
     object-fit: cover; /* Ensures the image covers the area without distortion */
 }
