@@ -1,0 +1,182 @@
+/* Typography */
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #323030;
+}
+
+/* Header */
+header {
+    background-color: #323030;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    font-style: italic;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Forms */
+form {
+    background: #DEF4C6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 25px 25px 25px;
+}
+
+.formHeaderContainer {
+    display: flex;
+    align-items: center;
+}
+
+.formHeaderContainer .formHeader {
+    flex-grow: 1;
+}
+
+.formHeader {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 5px 5px 0 0;
+}
+
+.assignment {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.assignment label,
+.assignment input {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 250px;
+}
+
+input[type="number"] {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #4caf50;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #31c636;
+    box-shadow: 0 0 8px #31c636;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#addClassButton, #removeClassButton {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#addClassButton {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#addClassButton:hover {
+    background-color: #45a049;
+}
+
+.removeClassButton {
+    background-color: #e53935;
+    margin-top: 10px;
+}
+
+.removeClassButton:hover {
+    background-color: #d32f2f;
+}
+
+/* Collapsible Forms */
+.collapsible .formContent {
+    display: block;
+}
+
+.collapsible.collapsed .formContent {
+    display: none;
+}
+
+/* Miscellaneous */
+.bar {
+    height: 20px;
+    background-color: #4caf50;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.gradeDisplay, .lowestMarkDisplay, .remainingWeightDisplay, .passMarkDisplay {
+    margin-top: 10px;
+}
+
+.bottom-text {
+    text-align: center;
+    margin-top: 75px;
+    color: #f9f9f9;
+}
+
+.sticky-logo {
+    pointer-events: none;
+    position: fixed;
+    bottom: 1px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.sticky-logo img {
+    width: 10vw;
+    height: auto;
+}

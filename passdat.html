@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassDat - Grade Calculator</title>
+    <link rel="stylesheet" href="PassDat/style.css">
+    <script src="PassDat/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>PassDat - Grade Calculator</h1>
+    </header>
+    <main id="mainContent">
+        <form class="gradeForm collapsible">
+            <div class="formHeaderContainer">
+                <input type="text" class="formHeader" value="Grade Calculator Form">
+                <button type="button" id="toggleFormButton" onclick="toggleForm(this)">v</button>
+            </div>
+            <div class="formContent">
+                <div class="assignments">
+                    <div class="assignment">
+                        <label>Assignment/Exam 1 Grade (%):</label>
+                        <input type="number" class="assignmentGrade" min="0" max="100" oninput="validateInput(this)">
+                        <label>Weight (%):</label>
+                        <input type="number" class="assignmentWeight" min="0" max="100" oninput="validateInput(this)">
+                    </div>
+                </div>
+                <button type="button" onclick="addAssignment(this)">Add Assignment</button>
+                <button type="button" onclick="removeAssignment(this)">Remove Assignment</button><br>
+                <button type="button" onclick="calculateGrade(this)">Calculate Grade</button>
+                <div class="gradeDisplay"></div>
+                <div class="lowestMarkDisplay"></div>
+                <div class="remainingWeightDisplay"></div>
+                <div class="passMarkDisplay"></div>
+                <button type="button" class="removeClassButton" onclick="removeClass(this)">Remove Class</button>
+            </div>
+        </form>
+        <button id="addClassButton" onclick="addClass()">Add Class</button>
+        <button id="addClassButton" onclick="GenerateGPA()">Generate GPA Summary</button>
+        <div class="bottom-text">
+            <p>Tip: Save your progress by saving the webpage. Remember to save your work frequently to avoid losing any progress!</p>
+            <p>Windows: CTRL + S</p>
+            <p>Mac: Choose File > Save As</p>
+            <p>Phone: Add to a list or save locally</p>
+        </div>
+        <div class="sticky-logo">
+            <img src="images/PassDat-logo.png" alt="Pass Dat Logo">
+        </div>
+    </main>
+</body>
+</html>
