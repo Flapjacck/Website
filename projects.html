@@ -56,20 +56,42 @@
                 </a>
                 <p>My work in Data Structures <a href="https://github.com/Flapjacck/CP164" target="_blank">I</a> and <a href="https://github.com/Flapjacck/CP264" target="_blank">II</a> while attending WLU. Provides help for those who cant figure out certain problems.</p>
             </div>
+            <div class="project-card">
+                <h3>Solution-Stash</h3>
+                <a href="https://github.com/Flapjacck/Solution-Stash" target="_blank">
+                    <img src="images/solutionlogo.png" alt="GitHub Repository" class="img-fixed-size">
+                </a>
+                <p>Repo to show my solutions for LeetCode. Most questions will be in written in the C Language</p>
+            </div>
         </section>
     </main>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const projectCards = document.querySelectorAll('.project-card');
-    
-            projectCards.forEach(card => {
-                card.addEventListener('mouseover', function() {
-                    card.style.transform = 'scale(1.025)';
-                    card.style.transition = 'transform 0.3s ease';
+        const projectCards = document.querySelectorAll('.project-card');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                    }
                 });
-    
-                card.addEventListener('mouseout', function() {
-                    card.style.transform = 'scale(1)';
+            }, {
+            threshold: 0.1
+            });
+
+        projectCards.forEach(card => {
+            observer.observe(card);
+            });
+
+        projectCards.forEach(card => {
+            card.addEventListener('mouseover', function() {
+                card.style.transform = 'scale(1.025)';
+                card.style.transition = 'transform 0.3s ease';
+                });
+
+            card.addEventListener('mouseout', function() {
+                card.style.transform = 'scale(1)';
                 });
             });
         });
