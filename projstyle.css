@@ -47,12 +47,12 @@ nav ul li a:hover {
 
 #hero h1 {
     font-family: 'DM Serif Text', serif;
-    font-size: 4em;
+    font-size: 5vw;
     margin: 0px;
 }
 
 #hero p {
-    font-size: 1.9em;
+    font-size: 3.5vw;
 }
 
 /* Projects Section */
