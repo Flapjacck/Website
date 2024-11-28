@@ -1,6 +1,6 @@
 html, body {
-    width: 99%;
-    height:99%;
+    width: 99.79%;
+    height:99.6%;
   }
   
 body {
@@ -157,3 +157,13 @@ h2 {
     color: #ad9c93; 
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+html, body {
+    overflow: hidden;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
